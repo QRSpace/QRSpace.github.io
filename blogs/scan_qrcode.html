@@ -11,6 +11,7 @@
 <meta http-equiv="cache-control" content="no-store">
 <link rel="stylesheet" href="/css/qrspace.css" type="text/css"/>
 <script src="/js/jquery.js"></script>
+<scritp src="/js/qrspace.js"></scritp>
 <body>
 <h2>模糊二维码 QRCode 的识别</h2>
 
@@ -21,22 +22,22 @@
 </p>
 
 <h3>主要开源二维码识别算法介绍</h3>
-<p>为了便于比较，笔者选择了被中国广大企业各个人爱好者所选用的开源项目 zXing 和 zBar 项目进行分析比较，检测开源项目和商用项目之间存在的巨大差距，便于需要二维码识别功能的朋友参考，文中有不妥和不足之处，欢迎批评指正，以便共同研究和进步。
+<p>为了便于比较，笔者选择了被中国广大企业各个人爱好者所选用的开源项目 zXing 和 zBar 项目进行分析比较，检测开源项目和商用项目之间存在的差异，便于需要二维码识别功能的朋友参考，文中有不妥和不足之处，欢迎批评指正，以便共同研究和进步。
 </p>
 <h4>开源二维码识别项目-zXing</h4>
 <p>开发语言：Java</p>
 <p>项目地址：git://github.com/zxing</p>
 
-<p>以Java语言为基础开发，旨在提供一种二维码识别解决方案，后被Google支持，用于Android上二维码识别解决方案，项目目前托管在 git://github.com/zxing</p>
-<p>zXing 曾经被移植到多种语言，如 C++，PHP，Javascript 等，不过现在已经停止了其他语言的更新而专注于 Java语言和 Android 平台上的应用开发。</p>
+<p>以 Java 语言为基础开发，旨在提供一种二维码识别解决方案，后被 Google 赞助支持，用于 Android 上二维码识别的开源解决方案，项目目前托管在 git://github.com/zxing</p>
+<p>zXing 曾经被移植成多种语言，如 C++，ObjectC，PHP，Javascript 等，不过现在已经停止了其他语言的更新而专注于 Java 语言和 Android 平台上的应用开发。</p>
 
 <h4>开源二维码识别项目-zBar</h4>
 <p>这是一个名为 spadix 的网友所开发的开源项目，spadix@users.soureforge.net</p>
 <p>开发语言：C</p>
 <p>项目地址：zbar.sourceforge.net</p>
-<p>目前该项目已经不再更新</p>
+<p该项目使用C语言开发，主要支持 Windows ，Linux，IOS 和嵌入式平台平台等，是C语言开发者研究和开发自己的二维码识别算法的最佳起点项目，目前该项目已经不再更新了。</p>
 <h3>商用二维码识别SDK</h3>
-<p>目前还没有发现有商用的开源项目，由于版权的原因，只选择了<a href="http://www.efittech.com">斐泰科技</a>的商用二维码SDK进行了对比测试，以发现商用二维码识别的是否有优势以及有时所在。</p>
+<p>目前还没有发现有商用的开源项目，由于版权的原因，只选择了<a href="http://www.efittech.com">斐泰科技</a>的商用二维码SDK进行了对比测试，以发现商用二维码识别的是否有优势以及优势所在。</p>
 <p>开发语言：C/C++,C#,VBA，VB,VB.Net,JavaScript,VBScript,Delphi，J#，Java，FoxPro</p>
 <p>参考地址：http://www.efittech.com/cp_4.html</p>
 <h3>测试二维码图片之一</h3>
@@ -49,6 +50,8 @@
 <span class="mbuttons" id="btnNextPage">后1张</span> | 
 <span class="mbuttons" id="btnNextImage">后1页</span> |
 <span class="mbuttons" id="btnLastImage">最后1张</span>
+<p>从目前的测试来看，对于手机二维码应用，如果手机摄像头的成像质量不错的情况下，开源二维码识别项目可以获得较好的识别效果。从作者的研究来看，目前国内的手机二维码识别软件90%以上都是在开源的基础上开发的，这从一些极限测试就可以发现一些端倪。</p>
+<p>但是，对于一些<amhref首读率要求高的场合，开源的识别效果就太差强人意了。</p>
 <p>文中图片如有侵权，请致信:MagicQR@hotmail.com,即刻删除。</p>
 </body>
 </html>
