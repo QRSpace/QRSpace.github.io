@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 /*
 $('#btnPrevImage').click(funcion(){
 	$("#picPreview").attr('src',"/pics/test/weixincode.jpg");
