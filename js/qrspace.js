@@ -10,7 +10,10 @@ $('#btnNextImage').click(funcion(){
 	$("#picName").text("/pics/test/weixin-code.png");
 });
 */
-	$("p").click(function(){
+	$("#btnPrevImage").click(function(){
+		$(this).hide();
+	});
+	$("#btnNextImage").click(function(){
 		$(this).hide();
 	});
 });
