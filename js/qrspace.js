@@ -1,13 +1,13 @@
 jQuery(function($){
 
-$('btnPrevImage').mouseDown(funcion(){
-	$('picPreview').src="/pics/test/weixincode.jpg";
-	$('picName').Text="/pics/test/weixincode.jpg";
+$('#btnPrevImage').mouseDown(funcion(){
+	$('#picPreview').attr('src',"/pics/test/weixincode.jpg");
+	$('#picName').text("/pics/test/weixincode.jpg");
 });
 
-$('btnNextImage').mouseDown(funcion(){
-	$('picPreview').src="/pics/test/weixin-code.png";
-	$('picName').Text="/pics/test/weixin-code.png";
+$('#btnNextImage').mouseDown(funcion(){
+	$('#picPreview').attr('src',"/pics/test/weixin-code.png");
+	$('#picName').text("/pics/test/weixin-code.png");
 });
 
 
