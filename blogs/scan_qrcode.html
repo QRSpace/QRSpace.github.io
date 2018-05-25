@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=gb2312">
+<title>FitQR PLus QRCode Reader</title>
+</head>
+<meta content="条码识别二次开发,barcode SDK,barcode decoding,Halley2 barcode sdk" name="keywords">
+<meta content="Barcode SDK,单高效的条码二次开发,识别复杂背景和环境下的模糊二维码" name="description">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="cache-control" content="no-store">
+
+<body>
+<h2>模糊二维码 QRCode 识别</h2>
+
+<p>开源的二维码识别项目为客户的二维码识别应用开发提供了一个简单、免费的入门级手段。虽然需要投入一定的时间和精力进行消化和吸收，想要获得比较理想的效果还需要花费不菲的代价进行优化和升级，但是在工业和实际应用中依然满足不了实际的需要，这不是因为二维码识别技术目前不够成熟，而主要是因为：
+1、大多数开源的项目只是进行了基本的图像处理，如彩色图像的灰度化、二值化处理，无法使用复杂和环境下的二维码检测。
+2、开源项目只是提供了二维码的原理性检测和识别，无法应对模糊失真环境下的二维码检测和识别；
+可以
+3、开源项目的检测和采样算法都比较简单，对于实际应用中千变万化的场景无法适应。
+</p>
+
+<h3>主要开源二维码识别算法介绍</h3>
+<p>为了便于比较，笔者选择了被中国广大企业各个人爱好者所选用的开源项目 zXing 和 zBar 项目进行分析比较，检测开源项目和商用项目之间存在的巨大差距，便于需要二维码识别功能的朋友参考，文中有不妥和不足之处，欢迎批评指正，以便共同研究和进步。
+</p>
+<h4>开源二维码识别项目-zXing</h4>
+<p>开发语言：Java</p>
+<p>项目地址：git://github.com/zxing</p>
+
+<p>以Java语言为基础开发，旨在提供一种二维码识别解决方案，后被Google支持，用于Android上二维码识别解决方案，项目目前托管在 git://github.com/zxing</p>
+<p>zXing 曾经被移植到多种语言，如 C++，PHP，Javascript 等，不过现在已经停止了其他语言的更新而专注于 Java语言和 Android 平台上的应用开发。</p>
+
+<h4>开源二维码识别项目-zBar</h4>
+<p>这是一个名为 spadix 的网友所开发的开源项目，spadix@users.soureforge.net</p>
+<p>开发语言：C</p>
+<p>项目地址：zbar.sourceforge.net</p>
+<p>目前该项目已经不再更新</p>
+<h3>商用二维码识别SDK</h3>
+<p>目前还没有发现有商用的开源项目，由于版权的原因，只选择了<a href="http://www.efittech.com">斐泰科技</a>的商用二维码SDK进行了对比测试，以发现商用二维码识别的是否有优势以及有时所在。</p>
+<p>开发语言：C/C++,C#,VBA，VB,VB.Net,JavaScript,VBScript,Delphi，J#，Java，FoxPro</p>
+<p>参考地址：http://www.efittech.com/cp_4.html</p>
+<h3>测试二维码图片之一</h3>
+<p>此次共使用500张图片进行测试，从结果可以看出，开源项目的识别率需要改进的余地依然很大，在实际的应用中根本无法满足实际识别的要求。</p>
+<img src="/userpic/pic1">测试图片</p>
+<div id="btnFirstImage">第2张</div><div id="btnPrevImage">前2张</div><div id="btnPrevPage">前2页</div> | <div id="btnNextPage">后2页</div><div id="btnNextImage">后1张</div><div id="btnLastImage">最后1张</div>
+<p>文中图片如有侵权，请致信:MagicQR@hotmail.com,即刻删除。</p>
+</body>
+</html>
