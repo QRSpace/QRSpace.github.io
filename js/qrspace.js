@@ -11,4 +11,4 @@ $('#btnNextImage').click(funcion(){
 });
 
 
-});
+})();
