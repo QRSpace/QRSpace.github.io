@@ -17,6 +17,6 @@ $('#btnNextImage').click(funcion(){
 	});
 	$("#btnNextImage").click(function(){
 		$(this).hide();
-		$("#picName").text("/pics/test/weixincode.jpg");
+		$("#picName").text("/pics/test/weixin-code.png");
 	});
 });
