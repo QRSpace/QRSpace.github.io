@@ -13,7 +13,7 @@ $('#btnNextImage').click(funcion(){
 */
 	$("#btnPrevImage").click(function(){
 		//$(this).hide();
-		$("#picPreview").attr('src',"/pics/test/weixincode.jpg");
+		$("#picPreview").attr('src',"/pics/test/weixinCode.JPG");
 		$("#picName").text("/pics/test/weixinCode.JPG");
 	});
 	$("#btnNextImage").click(function(){
