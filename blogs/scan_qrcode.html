@@ -9,7 +9,8 @@
 <meta http-equiv="expires" content="0">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="cache-control" content="no-store">
-
+<link rel="stylesheet" href="/css/qrspace.css" type="text/css"/>
+<script src="/js/jquery.js"></script>
 <body>
 <h2>模糊二维码 QRCode 的识别</h2>
 
@@ -41,8 +42,14 @@
 <p>参考地址：http://www.efittech.com/cp_4.html</p>
 <h3>测试二维码图片之一</h3>
 <p>此次共使用500张图片进行测试，从结果可以看出，开源项目的识别率需要改进的余地依然很大，在实际的应用中根本无法满足实际识别的要求。</p>
-<img src="/userpic/pic1">测试图片</p>
-<div id="btnFirstImage">第2张</div><div id="btnPrevImage">前2张</div><div id="btnPrevPage">前2页</div> | <div id="btnNextPage">后2页</div><div id="btnNextImage">后1张</div><div id="btnLastImage">最后1张</div>
+<img id="picPreview" src="/pics/test/screenshotG30.gif">测试图片</img>
+<p>/pics/test/screenshotG30.gif</p>
+<span class="mbuttons" id="btnFirstImage">第1张</span> | 
+<span class="mbuttons" id="btnPrevImage">前1页</span>  | 
+<span class="mbuttons" id="btnPrevPage">前1张</span> | 
+<span class="mbuttons" id="btnNextPage">后1张</span> | 
+<span class="mbuttons" id="btnNextImage">后1页</span> |
+<span class="mbuttons" id="btnLastImage">最后1张</span>
 <p>文中图片如有侵权，请致信:MagicQR@hotmail.com,即刻删除。</p>
 </body>
 </html>
