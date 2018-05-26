@@ -21,4 +21,9 @@ $('#btnNextImage').click(funcion(){
 		$("#picPreview").attr('src',"/pics/test/weixin-code.png");
 		$("#picName").text("/pics/test/weixin-code.png");
 	});
+
+	$(".lstImage").click(function(){
+		$("#picName").text(this.text);
+		$("#picPreview").attr('src',this.text);
+	});
 });

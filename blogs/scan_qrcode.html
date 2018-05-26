@@ -22,7 +22,9 @@
 </p>
 
 <p>所谓模糊二维码，一般是使用定焦 Camera 所拍摄的图片或者虽然有自动对焦但是对焦不清晰的情况下所拍摄的照片，或者虽然对焦清晰但是二维码原图由于磨损、浸水或打印等原因造成的图像模糊。</p>
-<p>模糊二维码由于很难获得准确的二值图像，进而在模块检测的时候会将神色模块检测成浅色模块，如果这种情况比较严重，则标准的二维码检测算法就会失效，进而造成无法检测出二维码或者虽然可以检测出二维码但是无法通过纠错算法进而出现二维码识别失败的情况。</p>
+<img class="spic" src="/pics/test/weixinCodeG50.gif" alt="模糊图像"/>
+<img class="spic" src="/pics/test/ScreenshotG30.gif" alt="正常图像"/>
+<p>模糊二维码由于很难获得较为准确的二值图像，进而在模块检测的时候会将神色模块检测成浅色模块，如果这种情况比较严重，则标准的二维码检测算法就会失效，进而造成无法检测出二维码或者虽然可以检测出二维码但是无法通过纠错算法进而出现二维码识别失败的情况。</p>
 
 <h3>主要开源二维码识别算法介绍</h3>
 <p>为了便于比较，笔者选择了被中国广大企业各个人爱好者所选用的开源项目 zXing 和 zBar 项目进行分析比较，检测开源项目和商用项目之间存在的差异，便于需要二维码识别功能的朋友参考，文中有不妥和不足之处，欢迎批评指正，以便共同研究和进步。
@@ -51,10 +53,10 @@
 <table>
     <tr><td>测试图片列表</td><td>图片预览</td></tr>
     <tr><td>
-<li class=lstImage>/pics/test/weixinCodeGauss.gif</li>
-<li class=lstImage>/pics/test/weixinCodeG30.gif</li>
-<li class=lstImage>/pics/test/weixinCodeG40.gif</li>
-<li class=lstImage>/pics/test/weixinCodeG50.gif</li>
+<li class="lstImage">/pics/test/weixinCodeGauss.gif</li>
+<li class="lstImage">/pics/test/weixinCodeG30.gif</li>
+<li class="lstImage">/pics/test/weixinCodeG40.gif</li>
+<li class="lstImage">/pics/test/weixinCodeG50.gif</li>
     </td>
         <td><img id="picPreview" src="/pics/test/ScreenshotG30.gif" alt="测试图片"></img></td></tr>
 </table>
