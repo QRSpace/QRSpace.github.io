@@ -23,7 +23,7 @@ $('#btnNextImage').click(funcion(){
 	});
 
 	$(".lstImage").click(function(){
-		$("#picName").text(this.text());
-		$("#picPreview").attr('src',this.text());
+		$("#picName").text($(this).text());
+		$("#picPreview").attr('src',$(this).text());
 	});
 });
