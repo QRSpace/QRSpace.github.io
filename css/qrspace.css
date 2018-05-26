@@ -26,6 +26,10 @@
 	font-size: larger;
 }
 
+#picPreview {
+	width:600px;
+	height:600px;
+}
 h3
 {
     font-size:18px;
