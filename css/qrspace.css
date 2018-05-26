@@ -12,14 +12,15 @@
 	margin-right: 3px;
 }
 .lstImage {
-	height: 16px;
+	height: 20px;
 	border-left: 1px solid #FFFFFF;
 	border-top: 1px solid rgb(118, 85, 194);
+	border-left: 1px solid #FFFFFF;
 	border-right: 1px solid #5d38e2;
 	border-bottom: 1px solid #808080;
 	cursor: pointer;
 	float: top;
-	margin-right: 3px;
+	margin-top: 3px;
 }
 .selImage {
 	font-size: larger;
