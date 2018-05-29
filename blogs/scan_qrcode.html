@@ -57,6 +57,7 @@
 <table align=center width="100%">
     <tr><td>测试图片列表</td><td>图片预览</td></tr>
     <tr><td>
+        <ul>
             <li class="lstImage">/pics/test/ScreenshotG30.gif</li>
             <li class="lstImage">/pics/test/ScreenshotG40.gif</li>
             <li class="lstImage">/pics/test/weixin-code.png</li>
@@ -64,19 +65,20 @@
 <li class="lstImage">/pics/test/weixinCode.JPG</li>
 <li class="lstImage">/pics/test/weixinCodeG40.gif</li>
 <li class="lstImage">/pics/test/weixinCodeG50.gif</li>
+</ul>
     </td>
         <td><img width="600px" height="600px" id="picPreview" src="/pics/test/ScreenshotG30.gif" alt="测试图片"></img></td></tr>
 </table>
 
 <p id="picName">/pics/test/screenshotG30.gif</p>
-
+<div>
 <span class="mbuttons" id="btnFirstImage">第1张</span>
 <span class="mbuttons" id="btnPrevPage">前1页</span>
 <span class="mbuttons" id="btnPrevImage">前1张</span>
 <span class="mbuttons" id="btnNextImage">后1张</span>
 <span class="mbuttons" id="btnNextPage">后1页</span>
 <span class="mbuttons" id="btnLastImage">最后1张</span>
-</p>
+</div>
 <p>从目前的测试来看，对于手机二维码应用，如果手机摄像头的成像质量不错的情况下，开源二维码识别项目可以获得较好的识别效果。从作者的研究来看，目前国内的手机二维码识别软件90%以上都是在开源的基础上开发的，这从一些极限测试就可以发现一些端倪。</p>
 <p>但是，对于一些首读率要求高的场合，开源的识别效果就太差强人意了。</p>
 <p>对于一些首读率要求很高的场合，特别是事后处理的情况下，往往要求通过检测一张图片识别出一个甚至多个二维码，二维码识别算法的优劣直接关系到二维码是否可以被成功检测。开源算法的局限性就更加突出。</p>
@@ -86,16 +88,19 @@
     <li>提高识别速度：即减少单帧图片的识别时间和加快检测出符号所需要的时间</li>
     <li>提高识别率：即优化图像处理和识别算法，提高检测二维码的能力</li>
 </p>
-<p>开源二维码识别项目的优化主要有2个层面的问题：
+<p><ul>开源二维码识别项目的优化主要有2个层面的问题：
     <li><a href="#optApplication">应用层面的优化</a>，和</li>
     <li><a href="#optAlgorithm">算法层面的优化</a></li>
+</ul>
 </p>
 <h4><a name="optApplication"></a>开源项目应用层面的优化</h4>
-<p>这种层面的优化不牵涉到深层图像处理和识别算法的优化，属于比较简单易行的优化。只要具备一定的开发基础就可以进行，有时候会有明显的效果。主要包括：
+<p>这种层面的优化不牵涉到深层图像处理和识别算法的优化，属于比较简单易行的优化。只要具备一定的开发基础就可以进行，有时候会有明显的效果。
+    <ul>主要包括：
     <li>扫描区域的优化（主要针对zXing）：扫描区域的大小直接影响识别速度。处理一张240X240像素所需要的时间要比处理一张640*480像素的图像所需要的时间要小得多。zXing引导开发者制作手机二维码识别APP的时候增加一个取景框，要求二维码在取景框内才可以实现识别，其实就是一种通过指定扫描区域的方式来减少识别时间的。</li>
-    <li>扫描图像的优化</li>
+    <li>扫描图像的优化:包括扫描深度、扫描的步长等参数。</li>
     <li>扫描参数的修改：</li>
     <li>识别码制的优化：开源项目本身支持很多种符号类型，每一种符号类型的检测都需要时间，因此在实际应用中根据所需要识别的符号类型，剔除不需要识别的符号类型，进而减少单针图像的识别时间。这其实也是一种应用层面的优化，可以通过参数设置直接实现。</li>
+</ul>
 </p>
 <h4><a name-"optAlgorithm"></a>开源项目算法层面的优化</h4>
 <h4>开源项目的优化极限</h4>
